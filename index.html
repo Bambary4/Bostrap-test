@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Test1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#">Menu</a>
+
+                <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+            
+                <a class="nav-link" href="#">Lien</a>
+              
+                <a class="nav-link" href="#">Contact</a>
+            
+                <a class="nav-link" href="#">Rendez-vous</a>
+              
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="header text-center p-5 bg-dark text-light">
+        <div class="container">
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quo autem numquam</span>
+            <button type="button" class="btn btn-primary">S'inscrire</button>
+        <!-- </div>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button> -->
+<button type="button" class="btn btn-primary text dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">S'enregistrer </button>
+<button type="button" class="btn btn-primary text dark" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Remplir et envoyer</button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </section>
+      <section class="main-page py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6"><img src="OIP.jpg" class="img-fluid" alt="">Lorem ipsum dolor sit 
+                    amet consectetur, adipisicing elit. Est, illum?Lorem ipsum dolor sit
+                     amet consectetur adipisicing elit. Odit deleniti voluptatem rem autem hic ea 
+                     doloremque nesciunt adipisci fugiat quae!</div>
+                <div class="col-lg-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Illum velit ea voluptate doloribus libero quibusdam reiciendis perferendis,
+                      temporibus accusamus est.</div>
+                
+
+            </div>
+
+        </div>
+
+      </section>
+      <form class="row g-3 needs-validation bg-dark text-light main-page py-5" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Prenom</label>
+          <input type="text" class="form-control" id="validationCustom01" value="" required>
+          <div class="valid-feedback">
+           
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="validationCustom02" value="" required>
+          <div class="valid-feedback">
+          
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Nom d'utilisateur</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Veillez entrer votre nom d'utilisateur.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Ville</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Veillez entre un nom de ville existant.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">pays</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Choisir...</option>
+            <option>...</option>
+          </select>
+          <div class="invalid-feedback">
+            Veillez entrer un nom de pays valide.
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom05" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            Veillez entrer un zip valide.
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+                Accepter les termes et conditions
+            </label>
+            <div class="invalid-feedback">
+                Vous devez accepter avant de soumettre.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Soumettre le formulaire</button>
+        </div>
+      </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
